@@ -1,0 +1,101 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "cómo estás",
+            "di hola mundo",
+            "di hola",
+            "saluda",
+            "di hola mundo",
+            "di hola"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "fromUnit",
+              "type": "UnidadPersonalizada"
+            },
+            {
+              "name": "toUnit",
+              "type": "UnidadPersonalizada"
+            },
+            {
+              "name": "value",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ConvertIntent",
+          "samples": [
+            "convierte {value} {fromUnit} a {toUnit}",
+            "cuántos {toUnit} hay en {value} {fromUnit}",
+            "cambia {value} {fromUnit} a {toUnit}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "centímetros"
+              }
+            },
+            {
+              "name": {
+                "value": "metros"
+              }
+            },
+            {
+              "name": {
+                "value": "kilómetros"
+              }
+            },
+            {
+              "name": {
+                "value": "pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "pies"
+              }
+            },
+            {
+              "name": {
+                "value": "yardas"
+              }
+            }
+          ],
+          "name": "UnidadPersonalizada"
+        }
+      ],
+      "invocationName": "calculadora"
+    }
+  }
+}

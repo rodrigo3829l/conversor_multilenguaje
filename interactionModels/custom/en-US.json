@@ -1,0 +1,101 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "fromUnit",
+              "type": "CustomUnit"
+            },
+            {
+              "name": "toUnit",
+              "type": "CustomUnit"
+            },
+            {
+              "name": "value",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ConvertIntent",
+          "samples": [
+            "convert {value} {fromUnit} to {toUnit}",
+            "how many {toUnit} are in {value} {fromUnit}",
+            "change {value} {fromUnit} to {toUnit}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "centimeters"
+              }
+            },
+            {
+              "name": {
+                "value": "meters"
+              }
+            },
+            {
+              "name": {
+                "value": "kilometers"
+              }
+            },
+            {
+              "name": {
+                "value": "inches"
+              }
+            },
+            {
+              "name": {
+                "value": "feet"
+              }
+            },
+            {
+              "name": {
+                "value": "yards"
+              }
+            }
+          ],
+          "name": "CustomUnit"
+        }
+      ],
+      "invocationName": "calculator"
+    }
+  }
+}
